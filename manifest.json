@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "MultiNote",
+  "version": "1.0",
+  "description": "Делаю различные заметки йоу.",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "downloads",
+    "downloads.open",
+    "offscreen"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Нажми меня",
+    "default_icon": {
+      "16": "logo/16.png",
+      "32": "logo/32.png"
+    }
+  },
+  "icons": {
+    "16": "logo/16.png",
+    "32": "logo/32.png",
+    "64": "logo/64.png",
+    "128": "logo/128.png"
+  }
+}

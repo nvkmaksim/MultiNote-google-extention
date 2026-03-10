@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --fonts-family: "Roboto", sans-serif;
+    --font-size: clamp(1rem, 2.2vh, 1.5rem);
+
+    --font-color: rgb(0, 0, 0);
+    --ui-color: rgb(255, 223, 171);
+
+    --default-padding: 0.5rem;
+}
+
+html {
+    font-size: var(--font-size);
+    font-family: var(--fonts-family);
+    color: var(--font-color);
+}
+
+body {
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem;
+    border: 0.5rem solid var(--ui-color);
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 0.5rem 0;
+}
+
+.body__input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 3px solid rgb(255, 230, 190);
+    outline: none;
+}
+
+.body__input:active, .body__input:focus {
+    border: 3px solid var(--ui-color);
+}
+
+.body__btn-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+}
+
+.body__notes-section {
+    width: 100%;
+}
+
+.body__notes-section ul {
+    width: 100%;
+    list-style-type: none;
+}
+
+.body__notes-section ul li {
+    padding: 5px 0;
+}
+
+.body__notes-section .note-item,
+.body__notes-section .file-item, 
+.body__notes-section .tab-item {
+    display: flex;
+    align-items: flex-start;
+}
+
+.body__notes-section .file-item, 
+.body__notes-section .tab-item {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+.body__notes-section .note-text {
+    word-break: break-all;
+    overflow: break-word;
+}
+
+button {
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--ui-color);
+    border: 0;
+    padding: 0.2rem;
+}
+
+button img {
+    width: 100%;
+    height: auto;
+}
+
+.edit-input {
+    flex: 1;
+}
